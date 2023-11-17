@@ -1,0 +1,45 @@
+GET http://localhost:1337/api/chanteurs
+###
+GET http://localhost:1337/api/musiques
+###
+POST  http://localhost:1337/api/auth/local
+content-type: application/json
+
+{
+    "identifier": "miro",
+    "password": "Sakirdou1&"
+}
+###
+POST http://localhost:1337/api/chanteurs
+Content-Type: application/json
+
+{ "data": {
+  "Nom": "momo",
+  "Prenom": "Fouhou",
+  "DateNaissance": "1948-01-25"
+}
+}
+###
+POST http://localhost:1337/api/musiques
+Content-Type: application/json
+
+{ "data": {
+  "Titre": "jfais que danser",
+  "Lien_youtube": "https://www.youtube.com/watch?v=Hdy7l8fkREo",
+  "Chanteur": "Jul",
+  "Favoris": true,
+  "Date_de_sortie": "2023-11-04",
+  "Couleur_de_fond":"#134522"
+}
+}
+
+###
+GET http://localhost:1337/api/musiques?filters[Favoris]=true
+
+###
+GET http://localhost:1337/api/musiques?sort=createdAt:desc&populate=chanteur
+
+###
+POST http://localhost:1337/api/musiques
+
+###

@@ -1,0 +1,111 @@
+body,html,#root{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body{
+  background-color: #D9D9D9;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.connexion{
+  width: 100%;
+  height: 300px;
+  color: #A33498;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bloc{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+}
+
+.saisie1,.saisie2{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  
+}
+
+.Mypersonaldj{
+
+  text-align:center;
+  color: #A33498;
+  position: relative;
+  
+}
+.toto{
+  margin: 0;
+}
+.button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+  font-size: 50px;
+}
+
+.button a {
+  text-decoration: none;
+
+}
+
+
+.Mesmusiquespreferees {
+  display: flex;
+  color: #FF5B82;
+  justify-content: flex-start; 
+  
+}
+.carree{
+
+  display: flex;
+
+
+}
+
+.music {
+  width: 200px; 
+  height: 200px; 
+  margin: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.music-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.Derniersajouts{
+  color: #FF5B82;
+  
+}
+
